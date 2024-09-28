@@ -15,30 +15,30 @@
 ----
 ## CNN3:
 
-**+ Input**: 28x28 images of handwritten arithmetic operators (+, -, ×)
++ **Input**: 28x28 images of handwritten arithmetic operators (+, -, ×)
 
-**+ Output**: A 3-bit one-hot encoded representation of the recognized operator
++ **Output**: A 3-bit one-hot encoded representation of the recognized operator
 
 ----
 ## FCN1:
 
-**+ Input**: 10-bit one-hot encoded outputs from CNN1 and CNN2
++ **Input**: 10-bit one-hot encoded outputs from CNN1 and CNN2
 
-**+ Output**: A 4-bit binary representation of the digit
++ **Output**: A 4-bit binary representation of the digit
 
 ----
 ## FCN2:
 
-**+ Input**: Two 4-bit binary outputs from FCN1 and a 3-bit encoded output from CNN3 (total 11 bits)
++ **Input**: Two 4-bit binary outputs from FCN1 and a 3-bit encoded output from CNN3 (total 11 bits)
 
-**+ Output**: The result of the arithmetic operation in an 8-bit signed binary format
++ **Output**: The result of the arithmetic operation in an 8-bit signed binary format
 
 ----
 ## FCN3:
 
-**+ Input**: The 8-bit signed binary result
++ **Input**: The 8-bit signed binary result
 
-**+ Output**: Two seven-segment LED digit images displaying the final result
++ **Output**: Two seven-segment LED digit images displaying the final result
 
 ---
 이 구조를 통해 손으로 쓴 숫자와 연산 기호를 인식하고
