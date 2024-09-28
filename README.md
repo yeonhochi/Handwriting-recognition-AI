@@ -8,34 +8,39 @@
 ----
 ## CNN1, CNN2:
 
-입력: 28x28 크기의 손으로 쓴 숫자(0~9) 이미지
+**+ Input**: 28x28 images of handwritten digits (0-9)
 
-출력: 각 숫자에 해당하는 10비트 원-핫 인코딩 결과
+**+ Output**: A 10-bit one-hot encoded representation of the recognized digit
 
 ----
 ## CNN3:
 
-입력: 28x28 크기의 손으로 쓴 연산자 이미지 (기호: +, -, ×)
+**+ Input**: 28x28 images of handwritten arithmetic operators (+, -, ×)
 
-출력: 연산자에 해당하는 3비트 원-핫 인코딩 결과
+**+ Output**: A 3-bit one-hot encoded representation of the recognized operator
 
 ----
 ## FCN1:
 
-입력: CNN1과 CNN2의 10비트 원-핫 인코딩 출력값
+**+ Input**: 10-bit one-hot encoded outputs from CNN1 and CNN2
 
-출력: 4비트 이진수로 변환된 숫자 값
+**+ Output**: A 4-bit binary representation of the digit
 
 ----
 ## FCN2:
 
-입력: 두 개의 FCN1 출력값 (4비트 이진수)와 CNN3의 3비트 연산자 인코딩 값 (총 11비트)
+**+ Input**: Two 4-bit binary outputs from FCN1 and a 3-bit encoded output from CNN3 (total 11 bits)
 
-출력: 연산된 결과를 부호가 있는 8비트 이진수로 변환
+**+ Output**: The result of the arithmetic operation in an 8-bit signed binary format
 
 ----
 ## FCN3:
 
-입력: 부호가 있는 8비트 이진수
+**+ Input**: The 8-bit signed binary result
 
-출력: 최종 연산 결과를 표시하는 2개의 세그먼트 LED 숫자 이미지
+**+ Output**: Two seven-segment LED digit images displaying the final result
+
+---
+이 구조를 통해 손으로 쓴 숫자와 연산 기호를 인식하고
+
+이를 기반으로 연산을 수행하여 최종 결과를 시각적으로 출력할 수 있습니다. CNN이 이미지 인식을, FCN이 연산 처리를 담당하
