@@ -1,7 +1,7 @@
 # Handwriting-recognition-AI Model
 
  
-손으로 쓴 숫자와 연산 기호를 인식하고, 이를 기반으로 간단한 연산을 수행하는 딥러닝 모델의 구조에 대해 설명하겠습니다. 
+손으로 쓴 숫자와 연산 기호를 인식하고, 이를 기반으로 간단한 연산을 수행하는 딥러닝 모델
 
 이 모델은 CNN(Convolutional Neural Network)와 FCN(Fully Connected Network)를 결합하여 구성됩니다.
 
