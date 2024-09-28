@@ -6,6 +6,8 @@
 이 모델은 CNN(Convolutional Neural Network)와 FCN(Fully Connected Network)를 결합하여 구성됩니다.
 
  CNN이 이미지 인식을, FCN이 연산 처리를 담당합니다.
+ 
+![roadmap.png](https://github.com/yeonhochi/Handwriting-recognition-AI/blob/main/roadmap.png)
 
 ----
 ## CNN1, CNN2:
