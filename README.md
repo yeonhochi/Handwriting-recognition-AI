@@ -8,7 +8,7 @@
 ----
 ## CNN1, CNN2:
 
-**+ Input**: 28x28 images of handwritten digits (0-9)
+**+Input**: 28x28 images of handwritten digits (0-9)
 
 **+ Output**: A 10-bit one-hot encoded representation of the recognized digit
 
