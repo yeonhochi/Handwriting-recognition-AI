@@ -47,6 +47,4 @@
 + **Output**: Two seven-segment LED digit images displaying the final result
 
 ---
-이 구조를 통해 손으로 쓴 숫자와 연산 기호를 인식하고
 
-이를 기반으로 연산을 수행하여 최종 결과를 시각적으로 출력할 수 있습니다.
